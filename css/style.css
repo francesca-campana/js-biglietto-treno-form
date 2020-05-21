@@ -14,14 +14,14 @@ h2 {
   color: white;
   text-align: center;
 }
+/* Section Compilazione Form */
 .wrap {
   background-color: white;
   margin: 0 auto;
   width: 1170px;
   padding: 20px;
   border-radius: 10px;
-
-
+  box-shadow: 1px 1px 10px 1px #6e6e6e;
 }
 .form {
   display: flex;
@@ -66,6 +66,9 @@ h2 {
   border: 1px solid #b9144f;
   border-radius: 5px;
 }
+/* Fine Section Compilazione Form */
+
+/* Section Ticket */
 .wrap-ticket {
   background-color: white;
   margin: 0 auto;
@@ -96,3 +99,4 @@ h2 {
 .element p {
   font-weight: bold;
 }
+/* Fine Section Ticket */

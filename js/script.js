@@ -50,7 +50,7 @@ buttonGenera.addEventListener('click',
     //Mostra Ticket
     ticketMostra.className = ticketMostra.classList +'visible';
   }
-);
+); 
 
 
 //Evento quando si clicca su 'Annulla'
