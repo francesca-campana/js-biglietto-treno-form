@@ -11,11 +11,12 @@ var ticketOfferta = document.getElementById('ticket-offerta');
 var ticketCosto = document.getElementById('ticket-costo');
 var ticketCarrozza = document.getElementById('ticket-carrozza');
 var ticketCp = document.getElementById('ticket-cp');
+var ticketMostra = document.getElementById('ticket');
 
 //Altre variabili
 var formKmValue;
 var formEtaValue;
-
+var formNomeValue;
 
 
 //Evento quando si clicca su 'Genera'
@@ -37,13 +38,17 @@ buttonGenera.addEventListener('click',
       sconto = 'Sconto Senior';
     }
     //Compilazione Ticket
-    var formNomeValue = formNome.value;
+
+    formNomeValue = formNome.value;
     ticketNome.innerHTML = formNome.value;
     ticketCosto.innerHTML = prezzo.toFixed(2) + ' Euro';
     ticketOfferta.innerHTML = sconto;
     ticketCarrozza.innerHTML = Math.floor(Math.random() * 11);
     ticketCp.innerHTML = Math.floor(Math.random() * 300);
 
+
+    //Mostra Ticket
+    ticketMostra.className = ticketMostra.classList +'visible';
   }
 );
 
@@ -69,6 +74,7 @@ buttonAnnulla.addEventListener('click',
 
     //Gestione annullamento Codice Cp
     ticketCp.innerHTML = '';
+
     //Gestione annullamento Carrozza
     ticketCarrozza.innerHTML = '';
 
