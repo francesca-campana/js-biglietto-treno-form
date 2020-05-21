@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #b9144f;
+  width:100%;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.wrap {
+  background-color: white;
+  margin: 0 auto;
+  width: 1170px;
+  padding: 20px;
+  border-radius: 10px;
+
+
+}
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+.inserisci input {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #b9144f;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.inserisci select {
+  margin-top: 10px;
+  border: 1px solid #b9144f;
+  font-weight: bold;
+  height: 23px;
+  width: 110px;
+}
+/* .inserisci select {
+  padding: 10px;
+} */
+.inserisci {
+  font-size: 10px;
+  font-weight: bold;
+  color: #b9144f;
+  text-align: center;
+  width: 139px;
+  margin-right: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+
+}
+.btn button  {
+  margin-right: 20px;
+  padding: 8px 10px;
+  border: 1px solid #b9144f;
+  border-radius: 5px;
+}

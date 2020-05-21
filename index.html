@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Form Biglietto Treno </title>
@@ -12,24 +13,41 @@
       <section>
         <h2>Calcola il prezzo del tuo biglietto</h2>
         <!-- Form Calcola Prezzo -->
-        <div class="form_calcola">
+        <div class="wrap">
+          <div class="form_calcola">
 
-          <label>Nome Cognome </label>
-          <input id="form-nome" type="text">
+            <div class="form">
+              <div class="inserisci">
+                <label>Nome Cognome </label>
+                <input id="form-nome" type="text">
 
-          <label>Km da percorrere </label>
-          <input id="form-km" type="number">
+              </div>
 
-          <label>Fascia di età </label>
-          <select id="form-eta">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over">Over 65</option>
+              <div class="inserisci">
+                <label>Km da percorrere </label>
+                <input id="form-km" type="number">
+              </div>
 
-          </select>
+              <div class="inserisci">
+                <label>Fascia di età </label>
+                <select id="form-eta">
+                  <option value="minorenne">Minorenne</option>
+                  <option value="maggiorenne">Maggiorenne</option>
+                  <option value="over">Over 65</option>
 
-          <button id="form-genera">Genera</button>
-          <button id="form-annulla">Annulla</button>
+                </select>
+
+              </div>
+
+            </div>
+
+            <div class="btn">
+              <button id="form-genera">Genera</button>
+              <button id="form-annulla">Annulla</button>
+
+            </div>
+
+          </div>
 
         </div>
         <!-- Fine Form Calcola Prezzo -->
