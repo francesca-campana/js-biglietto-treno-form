@@ -9,6 +9,7 @@ var formEta = document.getElementById('form-eta');
 var ticketNome = document.getElementById('ticket-nome');
 var ticketOfferta = document.getElementById('ticket-offerta');
 var ticketCosto = document.getElementById('ticket-costo');
+var ticketCarrozza = document.getElementById('ticket-carrozza');
 
 //Altre variabili
 var formKmValue;
@@ -56,6 +57,15 @@ buttonAnnulla.addEventListener('click',
 
     //Gestione annulamento eta
     formEta.value = 'minorenne';
+
+    //Gestione annullamento offerta
+    ticketOfferta.innerHTML = '';
+
+    //Gestione annullamento Costo
+    ticketCosto.innerHTML = '';
+
+
+
 
 
 
