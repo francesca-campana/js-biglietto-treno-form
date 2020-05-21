@@ -10,6 +10,7 @@ var ticketNome = document.getElementById('ticket-nome');
 var ticketOfferta = document.getElementById('ticket-offerta');
 var ticketCosto = document.getElementById('ticket-costo');
 var ticketCarrozza = document.getElementById('ticket-carrozza');
+var ticketCp = document.getElementById('ticket-cp');
 
 //Altre variabili
 var formKmValue;
@@ -38,8 +39,10 @@ buttonGenera.addEventListener('click',
     //Compilazione Ticket
     var formNomeValue = formNome.value;
     ticketNome.innerHTML = formNome.value;
-    ticketCosto.innerHTML = prezzo + ' Euro';
+    ticketCosto.innerHTML = prezzo.toFixed(2) + ' Euro';
     ticketOfferta.innerHTML = sconto;
+    ticketCarrozza.innerHTML = Math.floor(Math.random() * 11);
+    ticketCp.innerHTML = Math.floor(Math.random() * 300);
 
   }
 );
@@ -64,6 +67,10 @@ buttonAnnulla.addEventListener('click',
     //Gestione annullamento Costo
     ticketCosto.innerHTML = '';
 
+    //Gestione annullamento Codice Cp
+    ticketCp.innerHTML = '';
+    //Gestione annullamento Carrozza
+    ticketCarrozza.innerHTML = '';
 
 
 
