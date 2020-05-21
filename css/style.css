@@ -66,3 +66,29 @@ h2 {
   border: 1px solid #b9144f;
   border-radius: 5px;
 }
+.wrap-ticket {
+  background-color: white;
+  margin: 0 auto;
+  width: 1170px;
+  padding: 20px;
+}
+.wrap-dati {
+  display: flex;
+  border: 1px solid gray;
+
+}
+.element:first-of-type {
+  width: 156px;
+  background-color: gray;
+  padding: 0 20px;
+  padding-bottom: 50px;
+  font-size: 12px
+}
+.element {
+  width: 200px;
+  padding-left: 20px;
+  font-size: 11px;
+}
+.element p {
+  font-weight: bold;
+}
