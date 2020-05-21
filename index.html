@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Biglietto Treno </title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <!-- Form Calcola Prezzo -->
+        <div class="form_calcola">
+
+          <label>Nome Cognome </label>
+          <input id="form-nome" type="text">
+
+          <label>Km da percorrere </label>
+          <input id="form-km" type="number">
+
+          <label>Fascia di età </label>
+          <select id="form-eta">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over">Over 65</option>
+
+          </select>
+
+          <button id="form-genera">Genera</button>
+          <button id="form-annulla">Annulla</button>
+
+        </div>
+        <!-- Fine Form Calcola Prezzo -->
+      </section>
+
+      <section id="ticket">
+        <h2>Il Tuo Biglietto</h2>
+
+        <p>NOME PASSEGGERO: <span id="ticket-nome"></span></p>
+        <p>Offerta: <span id="ticket-offerta"></span></p>
+        <p>Carrozza: <span id="ticket-carrozza"></span></p>
+        <p>Codice CP: <span id="ticket-cp"></span></p>
+        <p>Costo: </p>
+
+      </section>
+    </main>
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+  </body>
+</html>
