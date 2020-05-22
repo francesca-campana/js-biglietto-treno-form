@@ -48,9 +48,9 @@ buttonGenera.addEventListener('click',
 
 
     //Mostra Ticket
-    ticketMostra.className = ticketMostra.classList +'visible';
+    ticketMostra.className = 'visible';
   }
-); 
+);
 
 
 //Evento quando si clicca su 'Annulla'
@@ -77,6 +77,8 @@ buttonAnnulla.addEventListener('click',
 
     //Gestione annullamento Carrozza
     ticketCarrozza.innerHTML = '';
+
+    ticketMostra.className = 'hidden';
 
 
 

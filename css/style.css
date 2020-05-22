@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin-left: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
@@ -14,10 +14,11 @@ h2 {
   color: white;
   text-align: center;
 }
+
 /* Section Compilazione Form */
 .wrap {
   background-color: white;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 1170px;
   padding: 20px;
   border-radius: 10px;
@@ -76,27 +77,37 @@ h2 {
   padding: 20px;
 
 }
+
 .hidden {
   display: none;
+}
+.visible {
+  display: block;
 }
 .wrap-dati {
   display: flex;
   border: 1px solid gray;
 
 }
-.element:first-of-type {
-  width: 156px;
+.element-nome {
+  width: 160px;
   background-color: gray;
-  padding: 0 20px;
-  padding-bottom: 50px;
-  font-size: 12px
+  font-size: 11px;
+  font-weight: bold;
+  height: 100px;
+  padding: 10px;
+}
+.element-nome span {
+  font-size: 12px;
 }
 .element {
   width: 200px;
-  padding-left: 20px;
+  padding: 10px;
   font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100px;
 }
-.element p {
-  font-weight: bold;
-}
-/* Fine Section Ticket */
+
+/* Fine    Section Ticket */
