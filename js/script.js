@@ -31,7 +31,7 @@ buttonGenera.addEventListener('click',
       //Gestione Errore dati
       if ( isNaN(formKmValue) || formNomeValue.length == 0 ) {
         formErrore.className = 'visible';
-        console.log(formErrore);
+
       }else {
       // Calcolo Prezzo
       var prezzo = formKmValue * 0.21;
@@ -52,11 +52,12 @@ buttonGenera.addEventListener('click',
       ticketCosto.innerHTML = prezzo.toFixed(2) + ' Euro';
       ticketOfferta.innerHTML = sconto;
       ticketCarrozza.innerHTML = Math.floor((Math.random() * 10) + 1);
-      ticketCp.innerHTML = Math.floor((Math.random() * 1000) + 1);
+      ticketCp.innerHTML = Math.floor((Math.random() * 10000) + 1);
 
 
       //Mostra Ticket
       ticketMostra.className = 'visible';
+
     }
   }
 );

@@ -22,7 +22,7 @@ h2 {
   width: 1170px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px 1px #6e6e6e;
+  box-shadow: 1px 11px 13px -13px black;
 }
 .form {
   display: flex;
@@ -56,6 +56,12 @@ h2 {
   text-align: center;
   width: 139px;
   margin-right: 20px;
+}
+input:focus {
+  background-color: #b9144f;
+}
+input:focus::placeholder {
+  color: white;
 }
 .btn {
   display: flex;
@@ -95,18 +101,21 @@ h2 {
 
 }
 .element-nome {
-  width: 160px;
+  width: 179px;
   background-color: gray;
   font-size: 11px;
   font-weight: bold;
   height: 100px;
   padding: 10px;
 }
+.element-nome h3 {
+  font-size: 16px;
+}
 .element-nome span {
   font-size: 12px;
 }
 .element {
-  width: 200px;
+  width: 130px;
   padding: 10px;
   font-size: 11px;
   display: flex;
